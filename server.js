@@ -9,7 +9,7 @@ const mongoose = require('mongoose')
 const api = require('./server/routes/api')
 
 
-// app.use(express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, 'dist')))
 app.use(express.static(path.join(__dirname, 'node_modules')))
 
 app.use(bodyParser.json())

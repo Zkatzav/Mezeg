@@ -13,9 +13,9 @@ const getCityData  = async function(req, res){
  
   let cityName = req.params.cityName
   
-  await reqPromise(`${weatherAPI}=${cityName}`)
-  .then(function(data){
+  let data = await reqPromise(`${weatherAPI}=${cityName}`)
     data = JSON.parse(data)
+    console.log(data)
     let city = ({
                 name: data.location.name,
                 updatedAt: data.current.last_updated,
@@ -24,9 +24,10 @@ const getCityData  = async function(req, res){
                 conditionPic: data.current.condition.icon 
               })
     res.send(city)
+    console.log(body)
     
-  })
-  .catch(() => console.log("error"))
+  
+  // .catch(() => console.log("error"))
 }
 router.get('/city/:cityName', getCityData) 
 

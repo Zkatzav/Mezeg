@@ -1,0 +1,55 @@
+body {
+  margin: 5%;
+  background-image: url('./sky10.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  display: grid;
+  grid-row-gap: 10%;
+}
+
+.title{
+  background: #34ace0;
+  display: grid;
+  justify-content: space-around;
+  font-family: 'Geostar Fill', cursive;
+}
+
+#search{
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+input{
+  margin-right: 3%;
+  width: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#weather-container{
+  margin: 3%;
+  display: grid;
+  grid-row-gap: 15% 
+}  
+
+.city{
+  padding-right: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: lightcyan;
+  border-radius: 7px;
+  
+}
+
+.city-data{
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: lightcyan;
+  border-radius: 7px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
